@@ -7,7 +7,7 @@
     <title>Temperature Converter</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha256-ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg=" crossorigin="anonymous" />
     <style>
-        .results {
+        .results, #loading{
             display: none;
         }
     </style>
@@ -25,15 +25,18 @@
                     <div>
                         <button id="convert" class="button-primary">Convert</button>
                     </div>
+                    <div id = "loading">
+                        <img src="img/Pulse-1.7s-200px.gif" alt="">
+                    </div>
                     <div class="results">
                         <hr>
                         <div>
                             <label for="temp-kelvin">Temperature in Kelvin</label>
-                            <input type="number" id="temp-kelvin" class="u-full-width" disabled>
+                            <input type="text" id="temp-kelvin" class="u-full-width" disabled>
                         </div>
                         <div>
                             <label for="temp-farenheit">Temperature in Farenheit</label>
-                            <input type="number" id="temp-farenheit" class="u-full-width" disabled>
+                            <input type="text" id="temp-farenheit" class="u-full-width" disabled>
                         </div>
                     </div>
                 </form>
